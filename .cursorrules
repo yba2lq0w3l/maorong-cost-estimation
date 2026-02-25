@@ -1,0 +1,23 @@
+# Cursor AI Code Rules - 毛绒定制成本与工期估算系统
+
+## Project Context
+- **System Name**: 毛绒定制成本与工期估算系统 (FurZhiZhi / 毛织知)
+- **Repo Name**: maorong-cost-estimation
+- **Architecture**: Node.js modular design
+- **Domain**: Plush Toy Customization Intelligent Quoting & Scheduling System
+
+## Coding Standards & Tags
+1. All core modules must include standard annotations:
+   - `@Feature`: Linked feature module ID (e.g., M1, M2, M3, M4, M5)
+   - `@Version`: Module version (e.g., v0.1.0, v0.2.0, v1.0.0)
+   - `@SonarLint`: Quality gate status tag
+   - `@AI-Generated`: AI generated code marker with Cursor approval stamp
+2. Error Handling & Performance:
+   - Quoting engine response time must be strictly < 10s (target < 50ms locally).
+   - Cost estimation error margin must be controlled within <= 5%.
+
+## Branch Strategy
+- `main`: Production release branch.
+- `develop`: Integration & daily baseline scan branch.
+- `test`: QA testing branch.
+- `feature/*`: Feature development branches.

@@ -1,0 +1,20 @@
+{
+  "name": "maorong-cost-estimation",
+  "version": "1.0.0",
+  "description": "毛绒定制成本与工期估算系统 (FurZhiZhi / 毛织知) - 面向毛绒玩具定制行业的智能报价与排期工具",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "node test/engine.test.js"
+  },
+  "keywords": [
+    "plush-toy",
+    "cost-estimation",
+    "schedule-prediction",
+    "smart-quote",
+    "jenkins",
+    "cursor"
+  ],
+  "author": "FurZhiZhi Dev Team",
+  "license": "MIT"
+}
