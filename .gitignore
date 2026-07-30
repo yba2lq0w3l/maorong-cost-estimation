@@ -1,7 +1,11 @@
 target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+!.**/src/main/**/target/
+!.**/src/test/**/target/
+
+### Docker Demo Home Directories ###
+jenkins_home/
+sonarqube_data/
 
 ### IntelliJ IDEA ###
 .idea

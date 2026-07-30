@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: demo-jenkins
+    ports:
+      - "8080:8080"
+      - "50000:50000"
+    environment:
+      - JAVA_OPTS=-Djenkins.install.runSetupWizard=false
+    volumes:
+      - ./jenkins_home:/var/jenkins_home
+    user: root
+    restart: always
+
+  sonarqube:
+    image: sonarqube:lts-community
+    container_name: demo-sonarqube
+    ports:
+      - "9000:9000"
+    volumes:
+      - ./sonarqube_data:/opt/sonarqube/data
+    restart: always
